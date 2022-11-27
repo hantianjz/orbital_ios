@@ -14,6 +14,7 @@
 		7990AA32290C5624009298C1 /* OrbitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990AA31290C5624009298C1 /* OrbitalTests.swift */; };
 		7990AA3C290C5624009298C1 /* OrbitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990AA3B290C5624009298C1 /* OrbitalUITests.swift */; };
 		7990AA3E290C5624009298C1 /* OrbitalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990AA3D290C5624009298C1 /* OrbitalUITestsLaunchTests.swift */; };
+		7990AA4E292308EF009298C1 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = 7990AA4D292308EF009298C1 /* Numerics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7990AA4E292308EF009298C1 /* Numerics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Orbital;
+			packageProductDependencies = (
+				7990AA4D292308EF009298C1 /* Numerics */,
+			);
 			productName = Orbital;
 			productReference = 7990AA1D290C5622009298C1 /* Orbital.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 7990AA14290C5622009298C1;
+			packageReferences = (
+				7990AA4C292308EF009298C1 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = 7990AA1E290C5622009298C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7990AA4C292308EF009298C1 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7990AA4D292308EF009298C1 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7990AA4C292308EF009298C1 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7990AA15290C5622009298C1 /* Project object */;
 }
